@@ -5,8 +5,83 @@
     <title>case-6</title>
     <link rel="stylesheet" href="assets/normalize.css">
 
+    <style>
+        body {
+            background-image: url("assets/Images/sky.jpg");
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+        }
+        body>img:nth-child(1){
+            position: absolute;
+            width: 300vw;
+            height: 20vh;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            animation: my-animation 2s infinite linear;
+        }
+        body>img:nth-child(2){
+            position: absolute;
+            width: 200vw;
+            height: 50vh;
+            bottom: 20vh;
+            left: 0;
+            right: 0;
+            margin: auto;
+            animation: my-animation 2s infinite linear;
+        }
+        body>img:nth-child(3){
+            width: 20vw;
+            height: 20vh;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 13vh;
+            margin: auto;
+        }
+
+        body>img:nth-child(4){
+            width: 4.4vw;
+            height: 4.4vw;
+            position: absolute;
+            bottom: 14vh;
+            left: 41.2vw;
+            animation: anima-02 linear 5s  infinite reverse;
+        }
+        body>img:nth-child(5){
+            width: 4.4vw;
+            height: 4.4vw;
+            position: absolute;
+            bottom: 14vh;
+            right: 42vw;
+            animation: anima-02 linear 5s  infinite reverse;
+        }
+        @keyframes my-animation {
+            100%{
+                left: -100vw;
+            }
+        }
+        @keyframes anima-02 {
+            0%{
+                transform: rotate(360deg);
+            }
+            100%{
+                transform: rotate(0deg) ;
+            }
+        }
+
+    </style>
 </head>
 <body>
+    <img src="assets/Images/road.jpg" title="road" >
+    <img src="assets/Images/city.png" title="city" >
+    <img src="assets/Images/car.png" title="car" >
+
+    <img src="assets/Images/wheel.png" title="wheel" >
+    <img src="assets/Images/wheel.png" title="wheel" >
+
 
 </body>
 </html>
