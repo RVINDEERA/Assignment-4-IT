@@ -3,8 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <title>case-1</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+    <link rel="stylesheet" href="Assets/fontawesome/css/all.min.css">
+
+    <style>
+
+        section{
+            height: fit-content;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        section>div{
+            width: 300px;
+            height: 60px;
+            background: purple;
+            border-radius:0 10px 10px 0;
+            margin: 10px 0;
+            position: relative;
+            color: white;
+            margin-left: -250px;
+
+            transition-duration: 1s;
+
+        }
+        section>div>h3{
+            height: fit-content;
+            position: absolute;
+            left: 10px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        section>div>div{
+            height: fit-content;
+            position: absolute;
+            right: 10px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        section>div:hover{
+            margin-left: 0;
+        }
+
+    </style>
+
 </head>
 <body>
 
+<section>
+    <div>
+        <h3>Menu one</h3>
+        <div><i class="fa-solid fa-user"></i></div>
+    </div>
+    <div>
+        <h3>Menu two</h3>
+        <div><i class="fa-solid fa-user"></i></div>
+
+    </div>
+
+    <div>
+        <h3>Menu three</h3>
+        <div><i class="fa-solid fa-user"></i></div>
+
+    </div>
+    <div>
+        <h3>Menu four</h3>
+        <div><i class="fa-solid fa-user"></i></div>
+
+    </div>
+
+    <div>
+        <h3>Menu five</h3>
+        <div><i class="fa-solid fa-user"></i></div>
+
+    </div>
+</section>
+
+
+
+<script src="Assets/fontawesome/js/all.min.js"></script>
 </body>
 </html>
