@@ -4,8 +4,79 @@
     <meta charset="UTF-8">
     <title>case-2</title>
     <link rel="stylesheet" href="assets/normalize.css">
+
+
+    <style>
+        body{
+            background: rgba(83,9,255,0.87);
+
+        }
+        /* #circle1{
+             width: 300px;
+             aspect-ratio: 1/1;
+             border-radius: 100%;
+             background: white;
+             position: absolute;
+             top: 0;
+             bottom: 0;
+             right: 0;
+             left: 0;
+             margin: auto;
+
+         }*/
+
+        #circle2{
+            width: 280px;
+            aspect-ratio: 1/1;
+            border-radius: 100%;
+            background: gray;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            color: white;
+        }
+
+        #circle2>h2{
+            height: fit-content;
+            width: fit-content;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            color: white;
+        }
+        div::before{
+            content: "";
+            border: 10px solid white;
+            border-top-color: red;
+            border-radius: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+
+            /*transition-duration: 0s;*/
+
+
+        }
+        div:hover::before{
+            transform: rotate(360deg);
+            transition-duration: 2s;
+
+        }
+    </style>
 </head>
 <body>
 
+    <div id="circle2">
+        <h2>RWAD</h2>
+    </div>
 </body>
 </html>
